@@ -1,0 +1,23 @@
+.login-container {
+    width: 25%;
+    margin: 65px auto 0px auto;
+    mat-card {
+        mat-card-header {
+            flex-flow: column;
+            text-align: center;
+            mat-card-title {}
+        }
+        mat-card-content {
+            mat-form-field {
+                width: 100%;
+                 ::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
+                    opacity: 0;
+                }
+            }
+        }
+        mat-card-actions {
+            text-align: center;
+            button {}
+        }
+    }
+}

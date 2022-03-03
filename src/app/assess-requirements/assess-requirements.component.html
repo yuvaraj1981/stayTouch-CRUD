@@ -1,0 +1,69 @@
+<div class="outer-container" fxLayout="column" fxFlexFill>
+
+    <mat-card class="req-card-task1">
+        <mat-card-title>Task 1: PDF to Json Extract</mat-card-title>
+        <mat-card-content>
+            <p>In resume.zip file attached you will see two files resume.txt and resume.pdf, resume.txt is the extract of the pdf file resume.pdf, take the resume.txt and extract the experiences mentioned in resume, use js and extract the experience in the
+                form of array as follows:</p>
+
+            <mat-list role="list">
+                <mat-list-item role="listitem"> &#91; &#123; </mat-list-item>
+                <mat-list-item role="listitem"> title: "Directeur Commercial at Ceren" &#44; </mat-list-item>
+                <mat-list-item role="listitem"> year: "January 2018 - Present" &#44; </mat-list-item>
+                <mat-list-item role="listitem"> description: "blah blah...." &#44; </mat-list-item>
+                <mat-list-item role="listitem"> &#125; &#93; </mat-list-item>
+            </mat-list>
+
+            <p> the script you provide must be dynamic should be working any other pdf with similar format </p>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="req-card-task2">
+        <mat-card-title>Task 2: HTML/CSS Design</mat-card-title>
+        <mat-card-content>
+            <p> Please do html/css for the attached file design.png </p>
+
+            <div class="design-img">
+                <img src="../../assets/images/design.png" alt="design-task-img">
+            </div>
+
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="req-card-task3">
+        <mat-card-title>Task 3: CRUD operation with pagination/search and Authentication with local storage</mat-card-title>
+        <mat-card-content>
+            <p> <strong> Step 1:- </strong> Simple Authentication page with admin/admin as username and password.</p>
+            <p> <strong> Step 2:- </strong> Once authorized display a simple table with the following fields</p>
+            <mat-list role="list">
+                <mat-list-item role="listitem"> First name </mat-list-item>
+                <mat-list-item role="listitem"> Last name </mat-list-item>
+                <mat-list-item role="listitem"> email </mat-list-item>
+                <mat-list-item role="listitem"> Phone </mat-list-item>
+                <mat-list-item role="listitem"> address </mat-list-item>
+                <mat-list-item role="listitem"> meeting time </mat-list-item>
+            </mat-list>
+
+            <p> At the top of the table place a search which allows you to search using first name/last name, email, phone </p>
+            <p> if more than 10 rows present in the table paginate the table, pagination should work for both list and search results </p>
+            <p> At the top of the table place button "Create meeting" </p>
+
+            <p> <strong> Step 3:- </strong> When you click the button "Create meeting", display the form with following fields</p>
+            <mat-list role="list">
+                <mat-list-item role="listitem"> First name (Mandatory) </mat-list-item>
+                <mat-list-item role="listitem"> Last name </mat-list-item>
+                <mat-list-item role="listitem"> Email (Mandatory) (check for email validation) </mat-list-item>
+                <mat-list-item role="listitem"> Phone number with country picker (check for phone validation) (Mandatory) </mat-list-item>
+                <mat-list-item role="listitem"> Address with Google location picker </mat-list-item>
+                <mat-list-item role="listitem"> Meeting time with datetime picker (Mandatory) </mat-list-item>
+            </mat-list>
+            <p> Save button to save the data in local storage </p>
+
+            <p> <strong> Step 4:- </strong> on the table list display a column with edit link which take to the edit form to edit the data</p>
+
+            <p> Once task done, please push the code on Github and share me the repo and provide me a video showing all the features i described </p>
+
+        </mat-card-content>
+    </mat-card>
+
+</div>

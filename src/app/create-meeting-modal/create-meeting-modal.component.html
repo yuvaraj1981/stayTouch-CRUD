@@ -1,0 +1,50 @@
+<div class="create-meeting-container">
+    <!-- <h1 mat-dialog-title>Hi {{data.meetingData.first_name}}</h1> -->
+    <h1 mat-dialog-title> Create a Meeting
+        <mat-icon (click)="cancelMeeting()">clear</mat-icon>
+    </h1>
+
+    <div mat-dialog-content>
+        <!-- <p>Create a Meeting</p> -->
+
+        <div class="meeting-form-container">
+            <div class="left-form-container">
+                <mat-form-field appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput [(ngModel)]="data.meetingData.first_name">
+
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput [(ngModel)]="data.meetingData.email" #email="ngModel" placeholder="Ex: xyz@eyx.com">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput [(ngModel)]="data.meetingData.address" #address="ngModel" placeholder="Ex. 100 Main St">
+                </mat-form-field>
+            </div>
+            <div class="right-form-container">
+                <mat-form-field appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput [(ngModel)]="data.meetingData.last_name">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput [ngxMatDatetimePicker]="picker" placeholder="Choose a date & time" [(ngModel)]="data.meetingData.meetingtime">
+                    <mat-datepicker-toggle matSuffix [for]="$any(picker)"></mat-datepicker-toggle>
+                    <ngx-mat-datetime-picker #picker></ngx-mat-datetime-picker>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Telephone</mat-label>
+                    <input type="tel" id="phone" matInput [(ngModel)]="data.meetingData.phone" placeholder="555-555-1234">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+            </div>
+        </div>
+
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button color="warn" (click)="clearFormData()"> Clear </button>
+        <button mat-raised-button color="primary" [mat-dialog-close]="data.meetingData" cdkFocusInitial> Submit </button>
+    </div>
+
+</div>

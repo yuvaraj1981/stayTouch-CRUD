@@ -1,0 +1,33 @@
+.create-meeting-container {
+    margin: 0px auto;
+    display: block;
+    // overflow: auto;
+    h1 {
+        mat-icon {
+            float: right;
+            cursor: pointer;
+        }
+    }
+    .meeting-form-container {
+        display: table-row;
+        margin: auto;
+        .left-form-container {
+            display: table-cell;
+            width: 50%;
+            mat-form-field {
+                width: 90%;
+            }
+        }
+        .right-form-container {
+            display: table-cell;
+            width: 50%;
+            mat-form-field {
+                width: 90%;
+            }
+        }
+    }
+    .mat-dialog-actions {
+        display: block !important;
+        text-align: center;
+    }
+}
